@@ -1,1 +1,74 @@
+@import url("https://use.typekit.net/qes6mbe.css");
 
+body {
+	background-color: rgb(161, 154, 154);
+	color: white;
+}
+
+h1 {
+	font-family: "ethnocentric", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 98px;
+}
+
+h2 {
+	font-family: "ethnocentric", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 45px;
+}
+
+p {
+	font-family: "indivisible", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 20px;
+}
+
+h3 {
+	font-family: "indivisible", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 40px;
+}
+
+.button {
+	background-color: black;
+	display: inline-block;
+	margin: 10px;
+	padding: 10px 20px;
+	border-radius: 70px;
+}
+
+.button:hover {
+	background-color: rgb(33, 33, 33);
+}
+
+.container {
+	display: flex;
+}
+
+.color1,
+.color2,
+.color3,
+.color4 {
+	padding: 50px;
+	display: inline-block;
+}
+
+.color1 {
+	background-color: rgb(29, 168, 20);
+}
+
+.color2 {
+	background-color: rgb(255, 0, 0);
+}
+
+.color3 {
+	background-color: rgb(157, 0, 255);
+}
+
+.color4 {
+	background-color: rgb(20, 20, 20);
+}
