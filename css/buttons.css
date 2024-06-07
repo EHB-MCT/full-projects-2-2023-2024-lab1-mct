@@ -1,0 +1,11 @@
+.button {
+	background-color: black;
+	display: inline-block;
+	margin: 10px;
+	padding: 10px 20px;
+	border-radius: 70px;
+}
+
+.button:hover {
+	background-color: rgb(33, 33, 33);
+}
