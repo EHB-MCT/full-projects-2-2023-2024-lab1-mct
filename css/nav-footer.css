@@ -1,0 +1,215 @@
+/*----------------------------RESPONSIVE---------------------------*/
+@media only screen and (max-width: 375px) {
+	.mobile {
+	display: flex;
+    flex-direction: row-reverse;
+    height: 80px;
+    background-color: #141414;
+
+    font-family: "indivisible", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+	}
+
+	.mobile .menuToggle {
+		display: block;
+		position: relative;
+		top: 25px;
+        right: 30px;
+
+		z-index: 1;
+
+		-webkit-user-select: none;
+		user-select: none;
+	}
+
+	.mobile .menuToggle a {
+		text-decoration: none;
+		color: white;
+
+		transition: color 0.3s ease;
+	}
+
+	.mobile .menuToggle a:hover {
+		color: black;
+	}
+
+	.mobile .menuToggle input {
+		display: block;
+		width: 40px;
+		height: 32px;
+		position: absolute;
+		top: -7px;
+		left: -5px;
+
+		cursor: pointer;
+
+		opacity: 0;
+		z-index: 2;
+
+		-webkit-touch-callout: none;
+	}
+
+	.mobile .menuToggle span {
+		display: block;
+		width: 33px;
+		height: 4px;
+		margin-bottom: 5px;
+		position: relative;
+
+		background: white;
+		border-radius: 3px;
+
+		z-index: 1;
+
+		transform-origin: 4px 0px;
+
+		transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+	}
+
+	.mobile .menuToggle span:first-child {
+		transform-origin: 0% 0%;
+	}
+
+	.mobile .menuToggle span:nth-last-child(2) {
+		transform-origin: 0% 100%;
+	}
+
+	.mobile .menuToggle input:checked ~ span {
+		opacity: 1;
+		transform: rotate(45deg) translate(-2px, -1px);
+		background: white;
+	}
+
+	.mobile .menuToggle input:checked ~ span:nth-last-child(3) {
+		opacity: 0;
+		transform: rotate(0deg) scale(0.2, 0.2);
+	}
+
+	.mobile .menuToggle input:checked ~ span:nth-last-child(2) {
+		transform: rotate(-45deg) translate(0, -1px);
+	}
+
+	.mobile .menu {
+		position: absolute;
+		width: 320px;
+		margin: -100px 0 0 -50px;
+		padding: 40px;
+		padding-top: 105px;
+
+		background: #000000;
+		list-style-type: none;
+		-webkit-font-smoothing: antialiased;
+
+		transform-origin: 0% 0%;
+		transform: translate(100%, 0);
+
+		transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+		text-align: center;
+	}
+
+	.mobile .menu li {
+		padding: 10px 0;
+		font-size: 22px;
+		border-bottom: 2px solid white;
+	}
+	.mobile .menuToggle input:checked ~ ul {
+		transform: none;
+        transform: translate(-62%, 0);
+	}
+
+    .logo_mobile{
+        display: block;
+        margin: 0 auto;
+        width: 50px;
+        position: absolute;
+        left: 30px;
+        top: 5px;
+    }
+
+    .reserveer_button{
+        background-color: #000;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: block;
+        margin: 0 auto;
+        width: fit-content;
+        position: absolute;
+        left: 60%;
+        transform: translateX(-50%);
+        top: 20px;
+        border-radius: 30px;
+    }
+
+
+    /* FOOTER STYLING */
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        padding: 20px 0;
+    }
+
+    .logo_footer{
+        display: block;
+        margin: 0 auto;
+        width: 150px;
+    }
+
+    .socials{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+        flex-direction: column;
+    }
+
+    .socials a{
+        padding: 20px;
+    }
+
+    .social_icon_1{
+        padding-bottom: 10px;
+    }
+
+    .services_title{
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .services_items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    .services_items a{
+        text-decoration: none;
+        color: black;
+        padding: 3px 0;
+    }
+
+    .services_items a p{
+        font-weight: 400;
+    }
+
+    .follow_us{
+        padding-bottom: 10px;
+    }
+
+    .contact_us_title{
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .contact_us_content p{
+        font-weight: 400;
+        padding: 3px 0;
+    }
+}
