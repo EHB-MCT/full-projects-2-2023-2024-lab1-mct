@@ -206,6 +206,33 @@ body {
     .wrapper {
         overflow: hidden;
     }
+
+    .img_bring_to_life img {
+        width: 100%;
+        height: auto;
+    }
+
+    .bring_to_life_title {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .bring_to_life_title h2{
+        font-size: 24px;
+    }
+
+    .bring_to_life {
+        margin-top: 50px;
+    }
+
+    .bring_to_life_text p{
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .bring_to_life_text {
+        margin-top: 20px;
+    }
 }
 
 .read_more p{
