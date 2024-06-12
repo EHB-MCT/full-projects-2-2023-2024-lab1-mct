@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="css/reset.css" rel="stylesheet" />
+		<link href="css/contact.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://use.typekit.net/yrg2nyg.css" />
+
+		<title>contact</title>
+	</head>
+	<body>
+		<div class="outerwrapper">
+			<div class="innerwrapper">
+				<div class="content">
+					<h1>CONTACT</h1>
+					<form class="formulier">
+						<div class="rij">
+							<input type="text" id="naam" name="naam" placeholder="Naam" />
+						</div>
+						<div class="rij">
+							<input
+								type="text"
+								id="achternaam"
+								name="achternaam"
+								placeholder="Achternaam"
+							/>
+						</div>
+						<div class="rij">
+							<input type="text" id="Email" name="Email" placeholder="Email" />
+						</div>
+						<div class="rij">
+							<input
+								type="text"
+								id="vraag"
+								name="vraag"
+								placeholder="Vraag/Opmerking"
+							/>
+						</div>
+
+						<button type="submit" class="button">Aanvragen</button>
+					</form>
+					<div class="faq">
+						<div class="rij">
+							<h2>Veel gestelde vragen</h2>
+						</div>
+						<div class="rij" >
+							<p>Hoe krijg ik toegang tot het lab?</p>
+							<img src="imagess/info-icon.png" alt="info" class="info-icon" onclick="toggleAnswer(this)">
+						</div>
+						<div class="answer">
+							<p>
+								Indien je geen student bent van Erasmushogeschool Brussel zal je toegang moeten gaan vragen aan het secretariaat. Hier zal je een kaart krijgen waarmee je toegang krijgt tot Medialab.Brussels.
+							</p>
+						</div>
+						<div class="rij" >
+							<p>Hoe annuleer ik mijn reservatie?</p>
+							<img src="imagess/info-icon.png" alt="info" class="info-icon" onclick="toggleAnswer(this)">
+						</div>
+						<div class="answer">
+							<p>
+								Je kunt je reservatie annuleren door contact op te nemen met ons secretariaat of via de online portal.
+							</p>
+						</div>
+						<div class="rij" >
+							<p>Ik wil graag mijn eigen materiaal meenemen naar het fablab</p>
+							<img src="imagess/info-icon.png" alt="info" class="info-icon" onclick="toggleAnswer(this)">
+						</div>
+						<div class="answer">
+							<p>
+								Dit is toegestaan, maar je moet het materiaal eerst registreren bij het secretariaat.
+							</p>
+					</div>
+				</div>
+				<script>
+					 function toggleAnswer(element) {
+            const answer = element.parentElement.nextElementSibling;
+            if (answer.style.display == "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+                answer.style.maxHeight = answer.scrollHeight + "px";
+            }
+        }
+				</script>
+			</div>
+			<div class="footer"></div>
+		</div>
+	</body>
+</html>
