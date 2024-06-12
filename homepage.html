@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="https://use.typekit.net/qes6mbe.css">
     <title>Homepage</title>
 </head>
 <body>
@@ -62,41 +64,51 @@
         </div>
         <a class="reserveer" href="#">RESERVEER</a>
     </nav>
-    <div class="slider">
-        <img class="mySlides" src="images/Fab_Background_Mobile.png">
-        <img class="mySlides" src="images/Medialab_Background_Mobile.png">
-        <img class="mySlides" src="images/Record_Background_Mobile.png">
 
-        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
-
-        <script>
-            let slideIndex = 1;
-            showDivs(slideIndex);
-
-            function plusDivs(n) {
-            showDivs(slideIndex += n);
-            }
-
-            function showDivs(n) {
-            let i;
-            let x = document.getElementsByClassName("mySlides");
-            if (n > x.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = x.length} ;
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[slideIndex-1].style.display = "block";
-            }
-        </script>
-    </div>
     <div class="wrapper">
         <div class="intro_text">
+
+            <div class="slider">
+                <img class="mySlides" src="images/Fab_Background_Mobile.png">
+                <img class="mySlides" src="images/Medialab_Background_Mobile.png">
+                <img class="mySlides" src="images/Record_Background_Mobile.png">
+        
+                <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+        
+                <script>
+                    let slideIndex = 1;
+                    showDivs(slideIndex);
+        
+                    function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                    }
+        
+                    function showDivs(n) {
+                    let i;
+                    let x = document.getElementsByClassName("mySlides");
+                    if (n > x.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = x.length} ;
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    x[slideIndex-1].style.display = "block";
+                    }
+                </script>
+            </div>
 
             <h2>waar alles aanwezig is om je audiovisuele projecten tot leven te brengen!</h2>
             <div class="buttons">
                 <a href="#">RESERVEER</a>
                 <a href="#">LEES MEER</a>
+            </div>
+
+            <div class="read_more">
+                <p>SCROLL VOOR MEER</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16.227" height="18.394" viewBox="0 0 16.227 18.394">
+                    <path id="Icon_akar-arrow-down" data-name="Icon akar-arrow-down" d="M13,21.667V4.333m-7.583,9.75L13,21.667l7.583-7.583" transform="translate(-4.886 -4.333)" fill="none" stroke="#696969" stroke-width="1.5"/>
+                  </svg>
+                  
             </div>
         </div>
     </div>

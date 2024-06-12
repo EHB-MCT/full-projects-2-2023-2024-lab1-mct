@@ -152,6 +152,9 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: auto;
+        gap: 20px; /* Add more spacing between the buttons */
+    
     }
     
     .buttons a {
@@ -159,7 +162,7 @@ body {
         text-decoration: none;
         color: white;
         background-color: #000000;
-        padding: 10px;
+        padding: 15px 35px;
         border-radius: 30px;
         margin: 5px 0;
     }
@@ -182,7 +185,7 @@ body {
         display: none;
         overflow: hidden;
     }
-    
+
     .w3-button {
         position: absolute;
         top: 50%;
@@ -199,4 +202,38 @@ body {
     .w3-display-right {
         right: 0;
     }
+
+    .wrapper {
+        overflow: hidden;
+    }
+}
+
+.read_more p{
+    font-family: "ethnocentric", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #B4B4B4;
+}
+
+.intro_text h2{
+    font-family: "urw-form", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.intro_text{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.read_more {
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
 }
