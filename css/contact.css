@@ -1,0 +1,167 @@
+@import url(main.css);
+
+body,
+h1,
+h2 {
+	margin: 0;
+	padding: 0;
+}
+
+.outerwrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: #141414;
+	color: #fff;
+	background-image: url("../imagess/gray_background.png") no-repeat center
+		center fixed;
+	background-size: cover;
+}
+
+p {
+	color: white;
+
+	font-family: "urw-form-expanded", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.innerwrapper {
+	flex: 1;
+	padding: 20px;
+}
+
+.content {
+	max-width: 65%;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
+h1 {
+	margin-bottom: 20px;
+	font-size: 24 px;
+
+	font-family: "urw-form-expanded", sans-serif;
+	font-weight: bolder;
+	text-align: center;
+}
+
+h2 {
+	font-size: 32 px;
+	font-family: "urw-form-expanded", sans-serif;
+	font-weight: bolder;
+	text-align: center;
+}
+
+.formulier {
+	margin-top: 100px;
+}
+
+.rij {
+	margin-bottom: 25px;
+}
+
+.rij h2 {
+	font-size: 24px;
+	text-align: start;
+}
+
+.rij p {
+	font-size: 1em;
+	margin: 5px 0;
+	flex: 1;
+	display: flex;
+}
+.rij input[type="text"],
+.rij input[type="email"],
+.rij textarea {
+	width: 95%;
+	padding: 10px;
+	margin: 0;
+	border: none;
+	border-radius: 5px;
+	background-color: rgba(190, 190, 190, 0.175);
+	color: #ccc;
+	font-family: "urw-form-expanded", sans-serif;
+}
+
+.rij input[type="text"]::placeholder,
+.rij input[type="email"]::placeholder,
+.rij textarea::placeholder {
+	color: #999;
+}
+
+textarea {
+	height: 100px;
+}
+
+.button {
+	background-color: #fff;
+	color: #000;
+	text-align: center;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.faq {
+	background-color: rgba(190, 190, 190, 0.175);
+	padding: 10px;
+	border-radius: 2px;
+	margin-top: 100px;
+}
+
+.faq .rij p {
+	border-bottom: 0.75px solid white;
+	flex-direction: row;
+	display: flex;
+}
+.faq .answer p {
+	margin: 5px 0;
+	color: #c7b7b7;
+	line-height: 1.2;
+}
+
+.answer {
+	display: none;
+	padding: 0 10px;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(151, 151, 151, 0.818);
+	transition: max-height 0.3s ease-out;
+}
+.info-icon {
+	width: 15px;
+	height: 15px;
+	margin-top: 5px;
+}
+
+.faq .rij {
+	margin: 10px 0;
+	display: flex;
+}
+
+@media (min-width: 768px) {
+	.content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 40px;
+		max-width: 70%;
+	}
+
+	.formulier {
+		grid-column: 1 / span 1;
+		margin-top: 10px;
+	}
+
+	.faq {
+		grid-column: 2 / span 1;
+		margin-top: 10px;
+	}
+	h1 {
+		text-align: start;
+		margin-bottom: 20px;
+	}
+}
