@@ -353,6 +353,10 @@ h2 {
 	max-height: 30%;
 }
 
+.video-container {
+	max-width: 100%;
+}
+
 @media only screen and (min-width: 768px) {
 	.machine-container {
 		display: flex;
