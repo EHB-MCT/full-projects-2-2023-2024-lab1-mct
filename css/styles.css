@@ -12,16 +12,19 @@ body {
     background-image: url(/imagess/gray_background.png);
     background-size: 50%;
     background-repeat: no-repeat;
+    background-position: 50%;
 }
 
 .container {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .calendar {
+    margin-top: 7ù%;
     width: 90%;
     max-width: 700px;
     border-radius: 25px;
@@ -49,7 +52,7 @@ body {
 .month button {
     background: none;
     display: flex;
-    color: red;
+    color: white;
     cursor: pointer;
 }
 
@@ -105,10 +108,11 @@ body {
 }
 
 .form-container {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
+    margin-top: 8%;
+    padding: 4%;
+    padding left: 5%;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
     color: white;
     width: 90%;
     max-width: 300px;
@@ -116,14 +120,17 @@ body {
 }
 
 .form-container h2 {
-    margin-top: 0;
-    font-size: 1.5em;
+    margin-top: 0%;
+    margin: 5%;
+    gap: 10px;
+    font-size: 45px;
 }
 
 .form-container form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 30px;
+    padding: 5%;
 }
 
 .form-container input,
