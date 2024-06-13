@@ -1,254 +1,277 @@
-    body {
-                margin: 0;
-                font-family: "indivisible", sans-serif;
-            }
-    
-    /*----------------------------RESPONSIVE---------------------------*/
-    @media only screen and (max-width: 768px) {
-        .desktop{
-            display: none;
-        }    
-        
-        .Mobile {
-                display: flex;
-            }
-        
-            nav.Mobile {
-                display: flex;
-                justify-content: center; 
-                align-items: center; 
-                background-color: #141414; 
-                color: white;
-                position: fixed;
-                width: 100%;
-                top: 0;
-                z-index: 1000;
-                padding: 10px;
-            }
-        
-            .menuToggle {
-                display: flex;
-                flex-direction: column;
-                position: absolute;
-                left: 10px;
-            }
-        
-            .logoMobile {
-                display: flex;
-                justify-content: center;
-                flex: 1;
-            }
-        
-            .logoMobile img {
-                max-height: 50px;
-                width: auto;
-                height: auto;
-                display: block;
-                margin-left: 100px;
-            }
-        
-            .Mobile .menuToggle input {
-                display: block;
-                width: 40px;
-                height: 32px;
-                position: absolute;
-                top: 10px;
-                left: 10px;
-                cursor: pointer;
-                opacity: 0;
-                z-index: 2;
-            }
-        
-            .Mobile .menuToggle span {
-                display: block;
-                width: 33px;
-                height: 4px;
-                margin-left: 20px;
-                margin-bottom: 5px;
-                position: relative;
-                background: white;
-                border-radius: 3px;
-                z-index: 1;
-                transform-origin: 4px 0px;
-                transition: transform 0.5s, background 0.5s, opacity 0.55s ease;
-            }
-        
-            .Mobile .menuToggle span:first-child {
-                transform-origin: 0% 0%;
-            }
-        
-            .Mobile .menuToggle span:nth-last-child(2) {
-                transform-origin: 0% 100%;
-            }
-        
-            .Mobile .menuToggle input:checked ~ span {
-                opacity: 1;
-                transform: rotate(45deg) translate(-2px, -1px);
-                background: white;
-            }
-        
-            .Mobile .menuToggle input:checked ~ span:nth-last-child(3) {
-                opacity: 0;
-                transform: rotate(0deg) scale(0.2, 0.2);
-            }
-        
-            .Mobile .menuToggle input:checked ~ span:nth-last-child(2) {
-                transform: rotate(-45deg) translate(0, -1px);
-                background: white;
-            }
-        
-            .Mobile .menu {
-                position: absolute;
-                width: 200px;
-                margin: -100px 0 0 -50px;
-                padding: 50px;
-                padding-top: 125px;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                background: #000000;
-                list-style-type: none;
-                transform-origin: 0% 0%;
-                transform: translate(-100%, 0);
-                transition: transform 0.5s;
-                text-align: center;
-            }
-        
-            .Mobile .menu li {
-                padding: 10px 0;
-                font-size: 22px;
-                border-bottom: 2px solid white;
-            }
-        
-            .Mobile .menuToggle input:checked ~ ul {
-                transform: none;
-            }
-        
-            .Mobile .menu a {
-                text-decoration: none;
-                color: white;
-            }
-        
-            .Mobile .menu a:hover {
-                color: black;
-            }
-        
-            .reserveer {
-                font-size: 15px;
-                text-decoration: none;
-                color: white;
-                margin-right: 30px;
-                background-color: #000000;
-                padding: 10px;
-                border-radius: 30px;
-            }
+body {
+    margin: 0;
+    font-family: "indivisible", sans-serif;
+}
+
+/*----------------------------RESPONSIVE---------------------------*/
+@media only screen and (max-width: 768px) {
+.desktop{
+display: none;
+}    
+
+.Mobile {
+    display: flex;
+}
+
+nav.Mobile {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #141414; 
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 10px;
+}
+
+.menuToggle {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 10px;
+}
+
+.logoMobile {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.logoMobile img {
+    max-height: 50px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin-left: 100px;
+}
+
+.Mobile .menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+}
+
+.Mobile .menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    position: relative;
+    background: white;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s, background 0.5s, opacity 0.55s ease;
+}
+
+.Mobile .menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+.Mobile .menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+.Mobile .menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: white;
+}
+
+.Mobile .menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.Mobile .menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+    background: white;
+}
+
+.Mobile .menu {
+    position: absolute;
+    width: 200px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #000000;
+    list-style-type: none;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s;
+    text-align: center;
+}
+
+.Mobile .menu li {
+    padding: 10px 0;
+    font-size: 22px;
+    border-bottom: 2px solid white;
+}
+
+.Mobile .menuToggle input:checked ~ ul {
+    transform: none;
+}
+
+.Mobile .menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.Mobile .menu a:hover {
+    color: black;
+}
+
+.reserveer {
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 30px;
+}
 }
 
 /* FOOTER STYLING */
 .footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    padding: 20px 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #ffffff;
+color: rgb(0, 0, 0);
+padding: 20px 0;
 }
 
 .logo_footer{
-    display: block;
-    margin: 0 auto;
-    width: 150px;
+display: block;
+margin: 0 auto;
+width: 150px;
 }
 
 .socials{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
-    flex-direction: column;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 10px 0;
+flex-direction: column;
 }
 
 .socials a{
-    padding: 20px;
+padding: 20px;
 }
 
 .social_icon_1{
-    padding-bottom: 10px;
+padding-bottom: 10px;
 }
 
 .socials div a {
-    text-decoration: none;
+text-decoration: none;
 }
 
 .services_title{
-    padding-top: 30px;
-    text-align: center;
+padding-top: 30px;
+text-align: center;
 }
 
 .services_items{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding-top: 10px;
 }
 
 .services_items a{
-    text-decoration: none;
-    color: black;
-    padding: 3px 0;
+text-decoration: none;
+color: black;
+padding: 3px 0;
 }
 
 .services_items a p{
-    font-weight: 400;
+font-weight: 400;
 }
 
 .follow_us{
-    padding-bottom: 10px;
+padding-bottom: 10px;
 }
 
 .contact_us_title{
-    padding-top: 30px;
-    text-align: center;
+padding-top: 30px;
+text-align: center;
 }
 
 .contact_us_content p{
-    font-weight: 400;
-    padding: 3px 0;
+font-weight: 400;
+padding: 3px 0;
 }
 
 @media only screen and (min-width: 768px) {
-    .footer{
-        flex-direction: row-reverse;
-        align-items: flex-start;
-    }
+.footer{
+flex-direction: row-reverse;
+align-items: flex-start;
+}
 
-    .contact_us_title,
-    .services_title{
-        padding-top:12px;
-    }
+.contact_us_title,
+.services_title{
+padding-top:12px;
+}
 
-    .Mobile{
-        display: none;
-    }
+.Mobile{
+display: none;
+}
 
-    .desktop_nav{
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px 20px;
-        background-color: #141414;
-    }
+.desktop_nav{
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px 20px;
+background-color: #141414;
+}
 
-    .logo_desktop a img{
-        width: 150px;
-    }
+.logo_desktop a img{
+width: 150px;
+}
 
-    .desktop_nav div a {
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-        padding: 0 10px;
-    }
+.desktop_nav div a {
+text-decoration: none;
+color: rgb(255, 255, 255);
+padding: 10px;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #242323;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: white !important;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
 }
