@@ -1,0 +1,203 @@
+h2{
+    font-family: "urw-form-expanded", sans-serif;
+}
+
+.frontpage{
+    height: calc(100vh - 70px);
+    background-color: #141414;
+}
+
+.background img{
+    max-width: 190%;
+    display: block;
+    margin: 0 auto;
+}
+
+.background{
+    display: flex;
+    justify-content: center;
+    margin-top: 170px;
+}
+
+.read_more{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.read_more_button{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.tarieven{
+    padding-top: 70px;
+}
+
+.pas_frames{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.verbruiksmaterialen {
+    padding-top: 50px;
+}
+
+.contact {
+    padding-top: 50px;
+}
+
+.labs_container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.open_hours{
+    padding-bottom: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+    h2 {
+        font-size: 24px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    p{
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .informational_text {
+        text-align: center;
+    }
+
+    .tarieven p{
+        padding-bottom: 20px;
+    }
+
+    .lending_service_container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    h2{
+        font-size: 36px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+    
+    .background img{
+        max-width: 100%;
+    }
+
+    .informational_text h2{
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .background{
+        margin-top: 70px;
+    }
+
+    .read_more{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .read_more_button{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .tarieven{
+        padding-top: 70px;
+    }
+
+    .pas_frames{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .verbruiksmaterialen {
+        padding-top: 50px;
+    }
+
+    .contact {
+        padding-top: 50px;
+    }
+
+    .labs_container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .open_hours{
+        padding-bottom: 50px;
+    }
+
+    .machninepark h2{
+        padding-bottom: 20px;
+    }
+
+    .machninepark p{
+        width: 50%;
+    }
+
+    .tarieven h2{
+        padding-bottom: 20px;
+    }
+
+    .tarieven p{
+        padding-bottom: 20px;
+    }
+
+    .pas_frames{
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .verbruiksmaterialen h2{
+        padding-bottom: 20px;
+    }
+
+    .read_more_button{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .contact h2{
+        padding-bottom: 20px;
+    }
+
+    .verbruiksmaterialen p{
+        width: 50%;
+    }
+
+    .lending_service_container{
+        padding-top: 10px;
+    }
+}
