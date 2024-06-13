@@ -1,0 +1,549 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #141414;
+}
+
+h2{
+    font-family: "urw-form-expanded", sans-serif !important;
+}
+
+.intro_text h2 {
+    font-weight: 400 !important;
+}
+
+@media only screen and (max-width: 768px) {
+	.Mobile {
+		display: flex;
+	}
+
+	body {
+		margin: 0;
+		font-family: Arial, sans-serif;
+	}
+
+	nav.Mobile {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		position: fixed;
+		width: 100%;
+		top: 0;
+		z-index: 1000;
+		padding: 10px;
+
+        background: rgba(0, 0, 0, 0.23);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.7px);
+        -webkit-backdrop-filter: blur(4.7px);
+	}
+    
+
+	.menuToggle {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		left: 10px;
+	}
+
+	.logoMobile {
+		display: flex;
+		justify-content: center;
+		flex: 1;
+	}
+
+	.logoMobile img {
+		max-height: 50px;
+		width: auto;
+		height: auto;
+		display: block;
+		margin-left: 100px;
+	}
+
+	.Mobile .menuToggle input {
+		display: block;
+		width: 40px;
+		height: 32px;
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		cursor: pointer;
+		opacity: 0;
+		z-index: 2;
+	}
+
+	.Mobile .menuToggle span {
+		display: block;
+		width: 33px;
+		height: 4px;
+		margin-left: 20px;
+		margin-bottom: 5px;
+		position: relative;
+		background: white;
+		border-radius: 3px;
+		z-index: 1;
+		transform-origin: 4px 0px;
+		transition: transform 0.5s, background 0.5s, opacity 0.55s ease;
+	}
+
+	.Mobile .menuToggle span:first-child {
+		transform-origin: 0% 0%;
+	}
+
+	.Mobile .menuToggle span:nth-last-child(2) {
+		transform-origin: 0% 100%;
+	}
+
+	.Mobile .menuToggle input:checked ~ span {
+		opacity: 1;
+		transform: rotate(45deg) translate(-2px, -1px);
+		background: white;
+	}
+
+	.Mobile .menuToggle input:checked ~ span:nth-last-child(3) {
+		opacity: 0;
+		transform: rotate(0deg) scale(0.2, 0.2);
+	}
+
+	.Mobile .menuToggle input:checked ~ span:nth-last-child(2) {
+		transform: rotate(-45deg) translate(0, -1px);
+		background: white;
+	}
+
+	.Mobile .menu {
+		position: absolute;
+		width: 200px;
+		margin: -100px 0 0 -50px;
+		padding: 50px;
+		padding-top: 125px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		background: #000000;
+		list-style-type: none;
+		transform-origin: 0% 0%;
+		transform: translate(-100%, 0);
+		transition: transform 0.5s;
+		text-align: center;
+	}
+
+	.Mobile .menu li {
+		padding: 10px 0;
+		font-size: 22px;
+		border-bottom: 2px solid white;
+	}
+
+	.Mobile .menuToggle input:checked ~ ul {
+		transform: none;
+	}
+
+	.Mobile .menu a {
+		text-decoration: none;
+		color: white;
+	}
+
+	.Mobile .menu a:hover {
+		color: black;
+	}
+
+	.reserveer {
+		font-size: 15px;
+		text-decoration: none;
+		color: white;
+		margin-right: 30px;
+		background-color: #000000;
+		padding: 10px;
+		border-radius: 30px;
+	}
+	.intro_text {
+		font-size: 14px;
+        text-align: center;
+        color:white;
+	}
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: auto;
+        gap: 20px; /* Add more spacing between the buttons */
+    
+    }
+    
+    .buttons a {
+        font-size: 15px;
+        text-decoration: none;
+        color: white;
+        background-color: #000000;
+        padding: 15px 35px;
+        border-radius: 30px;
+        margin: 5px 0;
+    }
+    .wrapper.mobile {
+        display: flex;
+        justify-content: center;
+        height: auto;
+    }
+
+    .intro_text h2{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: auto;
+        justify-content: center;
+    }
+
+    .intro_text h2{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .bring_to_life {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .bring_to_life h2 {
+        text-align: left;
+    }
+
+    .workshops_frames {
+        flex-direction: row !important;
+    }
+
+    .lending_service_title h2 {
+        text-align: left !important;
+    }
+
+    .lending_service_text p{
+        width: 50%;
+    }
+
+    .lending_button {
+        justify-content: flex-start !important;
+    }
+
+    .location_contact {
+        display: flex;
+        flex-direction: row;
+
+        gap: 20px
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;   
+    }
+
+    .contact_title {
+        margin-top: 50px !important;
+    }
+
+    .contact_title h2 {
+        text-align: left !important;
+    }
+
+    .location_title h2 {
+        text-align: left !important;
+    }
+
+    .contact_button{
+        justify-content: flex-start !important;
+    }
+    
+    .open_hours_title h2{
+        text-align: left !important;
+    }
+
+    .labs_lendingdienst_open_hours{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .workshops_title {
+        text-align: left !important;
+    }
+}
+
+.desktop_nav {
+    position: fixed;
+    z-index: 5;
+
+    width: 100%;
+
+    background: rgba(0, 0, 0, 0.23);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.7px);
+    -webkit-backdrop-filter: blur(4.7px);
+}
+
+.button_desktop_reserveer{
+    margin-right: 60px;
+}
+
+.wrapper {
+    overflow: hidden;
+
+    width: 70%;
+    margin: 0 auto;
+}
+
+.img_bring_to_life img {
+    width: 100%;
+    height: auto;
+}
+
+.bring_to_life_title {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.bring_to_life_title h2{
+    font-size: 24px;
+}
+
+.bring_to_life {
+    margin-top: 50px;
+}
+
+.bring_to_life_text p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.bring_to_life_text {
+    margin-top: 20px;
+}
+
+.workshops_title h2{
+    font-size: 24px;
+}
+
+.workshops_title {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.workshops_text p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.workshops_text {
+    margin-top: 20px;
+}
+
+.workshops_frames img{
+    width: 80%;
+}
+
+.workshops_frames {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+.frame {
+    text-align: center;
+}
+
+.read_more p{
+    font-family: "ethnocentric", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #B4B4B4;
+}
+
+.intro_text h2{
+    font-family: "urw-form", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.intro_text{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.read_more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: auto;
+    margin-bottom: 10px;
+
+    margin-top: 25px;
+}
+
+.button{
+    font-family: "urw-form", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #B4B4B4;
+    text-decoration: none;
+    text-align: center;
+
+    background-color: #000000;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.lending_service_title h2{
+    font-size: 24px;
+    text-align: center;
+}
+
+.lending_service_title{
+    margin-top: 50px;
+}
+
+.lending_service_text p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.lending_service_text {
+    margin-top: 20px;
+}
+
+.lending_button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.location_title h2{
+    font-size: 24px;
+    text-align: center;
+}
+
+.location_title{
+    margin-top: 50px;
+}
+
+.location_text p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.location_text {
+    margin-top: 20px;
+}
+
+.contact_title {
+    margin-top: 100px;;
+}
+
+.contact_title h2{
+    font-size: 24px;
+    text-align: center;
+}
+
+.img img {
+    margin-top: 20px;
+}
+
+.contact_text p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.contact_text {
+    margin-top: 20px;
+}
+
+.contact_button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.open_hours_title h2{
+    font-size: 24px;
+    text-align: center;
+}
+
+.open_hours_title{
+    margin-top: 50px;
+}
+
+.open_hours_text p {
+    font-size: 14px;
+}
+
+.open_hours_text {
+    margin-top: 20px;
+}
+
+.open_hours_img_LABS img,
+.open_hours_img_UITLEENDIENST img{
+    width: 100%;
+    height: auto;
+}
+
+.open_hours_img_UITLEENDIENST{
+    margin-bottom: 50px;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+}
+
+.slider {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+
+    left: 0;
+}
+
+.mySlides {
+    max-width: 100%;
+    height: auto;
+    display: none;
+    overflow: hidden;
+}
+
+.w3-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 2em;
+    border: none;
+}
+.w3-display-left {
+    left: 60px;
+}
+
+.w3-display-right {
+    right: 60px;
+}
