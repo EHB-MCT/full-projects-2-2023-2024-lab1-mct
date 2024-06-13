@@ -91,7 +91,7 @@ p {
     white-space: nowrap;
     padding: 10px;
     margin-top: 100px;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
 }
 
 .scroll-container .slide {
@@ -108,28 +108,28 @@ p {
     align-items: flex-start;
 }
 #slide1 {
-    background-image: url("./images/wsimg-1.png");
+    background-image: url("../images/wsimg-1.png")
 }
 #slide2 {
-    background-image: url("./images/wsimg-1.png");
+    background-image: url("../images/wsimg-1.png");
 }
 #slide3 {
-    background-image: url("./images/wsimg-1.png");
+    background-image: url("../images/wsimg-1.png");
 }
 #slide4 {
-    background-image: url("./images/wsimg-1.png");
+    background-image: url("../images/wsimg-1.png");
 }
 #slide5 {
-    background-image: url("./images/wsimg-1.png");
+    background-image: url("../images/wsimg-1.png");
 }
 #slide6 {
-    background-image: url("./images/wsimg-1.png");
+    background-image: url("../images/wsimg-1.png");
 }
 #slide7 {
-    background-image: url("./images/wsimg-1.png");
+    background-image: url("../images/wsimg-1.png");
 }
 #slide8 {
-    background-image: url("./images/wsimg-1.png");
+    background-image: url("../images/wsimg-1.png");
 }
 .scroll-container .slide:nth-last-child(1) {
     margin-right: 0;
