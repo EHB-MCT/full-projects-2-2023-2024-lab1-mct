@@ -12,18 +12,6 @@
     <script>
         let mybutton = document.getElementById("myBtn");
 
-        window.onscroll = function () {
-            scrollFunction();
-        };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-
         function topFunction() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
@@ -65,13 +53,31 @@
         <a class="reserveer" href="#">RESERVEER</a>
     </nav>
 
+    <div class="desktop_nav desktop">
+        <div class="logo_desktop">
+            <a href="#">
+                <img src="images/logo_medialab_desktop.png" alt="logo">
+            </a>
+        </div>
+        <div class="nav_desktop_items">
+            <a href="">LABS</a>
+            <a href="">WORKSHOPS</a>
+            <a href="">UITLEENDIENST</a>
+            <a href="">CONTACT</a>
+        </div>
+        <div class="cta_navigation">
+            <a href="" class="button_desktop_reserveer">RESERVEER</a>
+        </div>
+    </div>
+
+
     <div class="wrapper">
         <div class="intro_text">
 
             <div class="slider">
-                <img class="mySlides" src="images/Fab_Background_Mobile.png">
-                <img class="mySlides" src="images/Medialab_Background_Mobile.png">
-                <img class="mySlides" src="images/Record_Background_Mobile.png">
+                <img class="mySlides" src="images/FabLab_Background.png">
+                <img class="mySlides" src="images/MadiaLab_Background.png">
+                <img class="mySlides" src="images/RecordLab_Background.png">
         
                 <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
                 <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
@@ -97,7 +103,9 @@
                 </script>
             </div>
 
-            <h2>waar alles aanwezig is om je audiovisuele projecten tot leven te brengen!</h2>
+
+
+            <h2>Waar alles aanwezig is om je audiovisuele projecten tot leven te brengen!</h2>
             <div class="buttons">
                 <a href="#" class="button">RESERVEER</a>
                 <a href="#" class="button">LEES MEER</a>
@@ -116,14 +124,16 @@
                   <img src="images/bring_to_life_img.png" alt="">
             </div>
 
-            <div class="bring_to_life_title">
-                <h2>Breng jouw ideeën tot leven</h2>
-            </div>
-            <div class="bring_to_life_text">
-                <p>Een ontmoetingsplaats voor creativiteit en technologie in Brussel. Jong en oud kunnen hier technologie verkennen en deelnemen aan begeleide workshops.
-                    <br>
-                    <br>
-                    Of je nu een leraar bent, een student met een creatief idee of een ondernemer die wil experimenteren, bij ons is iedereen welkom.</p>
+            <div class="text">
+                <div class="bring_to_life_title">
+                    <h2>Breng jouw ideeën tot leven</h2>
+                </div>
+                <div class="bring_to_life_text">
+                    <p>Een ontmoetingsplaats voor creativiteit en technologie in Brussel. Jong en oud kunnen hier technologie verkennen en deelnemen aan begeleide workshops.
+                        <br>
+                        <br>
+                        Of je nu een leraar bent, een student met een creatief idee of een ondernemer die wil experimenteren, bij ons is iedereen welkom.</p>
+                </div>
             </div>
         </div>
 
@@ -172,42 +182,44 @@
                 </div>
             </div>
             <div class="lending_button">
-                <a href="" class="button">MATERIAAL<br>LENEN</a>
+                <a href="" class="button">MATERIAAL LENEN</a>
             </div>
         </div>
 
-        <div class="location">
-            <div class="location_title">
-                <h2>Locatie</h2>
-            </div>
-            <div class="img">
-                <img src="images/location_hompage.png" alt="">
-            </div>
-            <div class="location_text">
-                <p>
-                    Onze labs  bevinden zich op <b>Campus 
-                    Kaai </b>van de <b>Erasmushogeschool 
-                    Brussel.</b>
-                    <br><br>
-                    Bekijk ook zeker eens onze 
-                    <b>bereikbaarheidsfiche</b>
-                    <br><br>
-                    Nijverheidskaai 170, 
-                    1070 Anderlecht
-                </p>
-            </div>
-        </div>
-
-        <div class="contact">
-            <div class="contact_title">
-                <h2>Contact</h2>
-                <div class="contact_text">
-                    <p>Wilt u met ons samenwerken voor uw persoonlijke/professionele project ?
-                        contacteer ons!</p>
+        <div class="location_contact">
+            <div class="location">
+                <div class="location_title">
+                    <h2>Locatie</h2>
+                </div>
+                <div class="img">
+                    <img src="images/location_hompage.png" alt="">
+                </div>
+                <div class="location_text">
+                    <p>
+                        Onze labs  bevinden zich op <b>Campus 
+                        Kaai </b>van de <b>Erasmushogeschool 
+                        Brussel.</b>
+                        <br><br>
+                        Bekijk ook zeker eens onze 
+                        <b>bereikbaarheidsfiche</b>
+                        <br><br>
+                        Nijverheidskaai 170, 
+                        1070 Anderlecht
+                    </p>
                 </div>
             </div>
-            <div class="contact_button">
-                <a href="" class="button">CONTACTEER ONS</a>
+
+            <div class="contact">
+                <div class="contact_title">
+                    <h2>Contact</h2>
+                    <div class="contact_text">
+                        <p>Wilt u met ons samenwerken voor uw persoonlijke/professionele project ?
+                            contacteer ons!</p>
+                    </div>
+                </div>
+                <div class="contact_button">
+                    <a href="" class="button">CONTACTEER ONS</a>
+                </div>
             </div>
         </div>
 
@@ -215,18 +227,24 @@
             <div class="open_hours_title">
                 <h2>Openingsuren</h2>
             </div>
+            <div class="labs_lendingdienst_open_hours">
+                <div class="labs_container">
                 <div class="open_hours_text">
                     <p>LABS</p>
                 </div>
             <div class="open_hours_img_LABS">
                 <img src="images/open_hours_LABS.png" alt="">
             </div>
+        </div>
+        <div class="lending_service_container">
                 <div class="open_hours_text">
                     <p>UITLEENDIENST</p>
                 </div>
             <div class="open_hours_img_UITLEENDIENST">
                 <img src="images/open_hours_LABS.png" alt="">
             </div>
+        </div>
+    </div>
         </div>
     </div>
 

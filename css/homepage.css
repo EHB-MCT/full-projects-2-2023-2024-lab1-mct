@@ -18,14 +18,19 @@ body {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background-color: #141414;
 		color: white;
 		position: fixed;
 		width: 100%;
 		top: 0;
 		z-index: 1000;
 		padding: 10px;
+
+        background: rgba(0, 0, 0, 0.23);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.7px);
+        -webkit-backdrop-filter: blur(4.7px);
 	}
+    
 
 	.menuToggle {
 		display: flex;
@@ -148,6 +153,7 @@ body {
         text-align: center;
         color:white;
 	}
+
     .buttons {
         display: flex;
         flex-direction: column;
@@ -171,6 +177,114 @@ body {
         justify-content: center;
         height: auto;
     }
+
+    .intro_text h2{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: auto;
+        justify-content: center;
+    }
+
+    .intro_text h2{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .bring_to_life {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .bring_to_life h2 {
+        text-align: left;
+    }
+
+    .workshops_frames {
+        flex-direction: row !important;
+    }
+
+    .lending_service_title h2 {
+        text-align: left !important;
+    }
+
+    .lending_service_text p{
+        width: 50%;
+    }
+
+    .lending_button {
+        justify-content: flex-start !important;
+    }
+
+    .location_contact {
+        display: flex;
+        flex-direction: row;
+
+        gap: 20px
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;   
+    }
+
+    .contact_title {
+        margin-top: 50px !important;
+    }
+
+    .contact_title h2 {
+        text-align: left !important;
+    }
+
+    .location_title h2 {
+        text-align: left !important;
+    }
+
+    .contact_button{
+        justify-content: flex-start !important;
+    }
+    
+    .open_hours_title h2{
+        text-align: left !important;
+    }
+
+    .labs_lendingdienst_open_hours{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    
+    }
+}
+
+.desktop_nav {
+    position: fixed;
+    z-index: 5;
+
+    width: 100%;
+
+    background: rgba(0, 0, 0, 0.23);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.7px);
+    -webkit-backdrop-filter: blur(4.7px);
+}
+
+.button_desktop_reserveer{
+    margin-right: 60px;
 }
 
 .wrapper {
@@ -391,10 +505,12 @@ body {
 }
 
 .slider {
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
     margin-top: 70px;
+
+    left: 0;
 }
 
 .mySlides {
@@ -414,9 +530,9 @@ body {
     border: none;
 }
 .w3-display-left {
-    left: 0;
+    left: 60px;
 }
 
 .w3-display-right {
-    right: 0;
+    right: 60px;
 }
