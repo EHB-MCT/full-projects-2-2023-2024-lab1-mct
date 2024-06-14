@@ -5,65 +5,75 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href="css/reset.css" rel="stylesheet" />
 		<link href="css/contact.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/homepage.css">
+		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="https://use.typekit.net/yrg2nyg.css" />
 
-		<title>contact</title>
+		<title>Contact</title>
 	</head>
 	<body>
-		<div class="outerwrapper">
-			<nav role="navigation" class="Mobile">
-				<div class="menuToggle">
-					<input type="checkbox" />
-					<span></span>
-					<span></span>
-					<span></span>
-					<ul class="menu">
-						<a href="">
-							<li>FabLab</li>
-						</a>
-						<a href="">
-							<li>MediaLab</li>
-						</a>
-						<a href="">
-							<li>StudioLab</li>
-						</a>
-						<a href="">
-							<li>Workshops</li>
-						</a>
-						<a href="">
-							<li class="SteunMobile">Uitleendienst</li>
-						</a>
-						<a href="contact.html">
-							<li class="SteunMobile">Contact</li>
-						</a>
-						<a href="">
-							<li>Reserveer</li>
-						</a>
-					</ul>
-				</div>
-				<div class="logoMobile">
-					<img src="images/MB_Logo_Mobile.png" alt="" />
-				</div>
-				<a class=reserveer href="#">RESERVEER</a>
-			</nav>
-		
-			<div class="desktop_nav desktop">
-				<div class="logo_desktop">
-					<a href="#">
-						<img src="images/logo_medialab_desktop.png" alt="logo">
+		<nav role="navigation" class="Mobile">
+			<div class="menuToggle">
+				<input type="checkbox" />
+				<span></span>
+				<span></span>
+				<span></span>
+				<ul class="menu">
+					<a href="fablab.html">
+						<li>FabLab</li>
 					</a>
-				</div>
-				<div class="nav_desktop_items">
-					<a href="">LABS</a>
-					<a href="">WORKSHOPS</a>
-					<a href="">UITLEENDIENST</a>
-					<a href="contact.html">CONTACT</a>
-					<a href="about.html">OVER ONS</a>
-				</div>
-				<div class="cta_navigation">
-					<a href="">RESERVEER</a>
-				</div>
+					<a href="medialab.html">
+						<li>MediaLab</li>
+					</a>
+					<a href="recordlab.html">
+						<li>RecordLab</li>
+					</a>
+					<a href="">
+						<li>Workshops</li>
+					</a>
+					<a href="">
+						<li class="SteunMobile">Uitleendienst</li>
+					</a>
+					<a href="contact.html">
+						<li class="SteunMobile">Contact</li>
+					</a>
+					<a href="">
+						<li>Reserveer</li>
+					</a>
+				</ul>
 			</div>
+			<div class="logoMobile">
+				<img src="images/MB_Logo_Mobile.png" alt="" />
+			</div>
+			<a class="reserveer" href="#">RESERVEER</a>
+		</nav>
+	
+	<div class="desktop_nav desktop">
+		<div class="logo_desktop">
+			<a href="homepage.html">
+				<img src="images/logo_medialab_desktop.png" alt="logo">
+			</a>
+		</div>
+		<div class="nav_desktop_items">
+			<div class="dropdown">
+				<a href="" class="dropbtn">LABS</a>
+				<div class="dropdown-content">
+				  <a href="fablab.html">Fablab</a>
+				  <a href="medialab.html">Medialab</a>
+				  <a href="recordlab.html">Recordlab</a>
+				</div>
+			  </div>
+			<a href="">WORKSHOPS</a>
+			<a href="">UITLEENDIENST</a>
+			<a href="">CONTACT</a>
+			<a href="">OVER ONS</a>
+		</div>
+		<div class="cta_navigation">
+			<a href="">RESERVEER</a>
+		</div>
+	</div>
+
+		<div class="outerwrapper">
 			<div class="innerwrapper">
 				<div class="content">
 					<h1>CONTACT</h1>
@@ -91,7 +101,7 @@
 							/>
 						</div>
 
-						<button type="submit" class="button">Aanvragen</button>
+						<a href="" class="button">Aanvragen</a>
 					</form>
 					<div class="faq">
 						<div class="rij">
@@ -184,14 +194,14 @@
 				<div class="services_title">
 					<p>SERVICES</p>
 					<div class="services_items">
-						<a href="#" class="medialab">
+						<a href="medialab.html" class="medialab">
 							<p>MediaLab</p>
 						</a>
-						<a href="#" class="fablab">
+						<a href="fablab.html" class="fablab">
 							<p>FabLab</p>
 						</a>
-						<a href="#" class="audiolab">
-							<p>AudioLab</p>
+						<a href="recordlab.html" class="audiolab">
+							<p>RecordLab</p>
 						</a>
 						<a href="#" class="workshops">
 							<p>Workshops</p>

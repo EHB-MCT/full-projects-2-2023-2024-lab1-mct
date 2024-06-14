@@ -205,7 +205,7 @@ h2{
 
     .intro_text h2{
         position: absolute;
-        top: 60%;
+        top: 75%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -529,6 +529,7 @@ h2{
     height: auto;
     display: none;
     overflow: hidden;
+    z-index: -5;
 }
 
 .w3-button {
@@ -541,9 +542,9 @@ h2{
     border: none;
 }
 .w3-display-left {
-    left: 60px;
+    left: 80px;
 }
 
 .w3-display-right {
-    right: 60px;
+    right: 80px;
 }

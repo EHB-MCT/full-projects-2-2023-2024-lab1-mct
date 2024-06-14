@@ -250,6 +250,10 @@ padding: 3px 0;
         color: rgb(255, 255, 255);
         padding: 10px;
     }
+
+    .cta_navigation a{
+        margin-right: 40px;
+    }
       
       .dropdown {
         position: relative;
