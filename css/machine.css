@@ -334,6 +334,9 @@ h2 {
 
 .machine-container {
 	align-items: center;
+	margin-bottom: 50px;
+	align-items: flex-start;
+	align-content: space-around;
 }
 
 .kader .rij:last-child {
@@ -350,7 +353,13 @@ h2 {
 }
 
 .img_machine {
-	max-height: 30%;
+	max-width: 100%;
+}
+
+.video-container {
+	max-width: 60%;
+	align-content: center;
+	margin-bottom: 50px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -377,6 +386,9 @@ h2 {
 		margin-right: 0;
 	}
 	h1 {
+		text-align: start;
+	}
+	h2 {
 		text-align: start;
 	}
 }
