@@ -1,0 +1,162 @@
+body {
+    background-color: #141414;
+    margin: auto;
+    background-image: url(./images/gray_background.png);
+    background-position: right center;
+	background-repeat: no-repeat;
+	background-attachment:scroll;
+	background-size: 1000px;
+}
+h1 {
+    font-family: "uniwars", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+h2 {    
+    font-family: "indivisible", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+}
+p {
+    font-family: "indivisible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+}
+
+.responsive-imago {
+    width: 100%;
+    height: auto;
+    max-width: 838px;
+}
+
+.imago {
+    text-align: center;
+}
+.box {
+    margin-top: 30%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .box {
+        text-align: start;
+        margin-top: 7%;
+        margin-left: 10%;
+        margin-right: 30%;
+    }    
+    .imago h1{
+        text-align: start;
+        margin-left: 10%;
+        position: absolute;
+        top: 40%;
+        left: 10px;
+    }
+    .responsive-imago {
+        margin-left: 8%;
+        margin-right: 10%;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .box {
+        margin-right: 50%
+    }
+    .responsive-imago {
+        max-width: 1200px;
+    }
+    .imago h1{
+        top: 62%;
+    }
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+/* Desktop styles */
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+    margin-top: 100px;
+    margin-bottom: 10%;
+}
+
+.scroll-container .slide {
+    min-width: 600px;
+    /* Increased width for desktop */
+    height: 300px;
+    /* Adjusted height for desktop */
+    background-color: #f1f1f1;
+    margin-right: 20px;
+   
+    /* Increased margin for desktop */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#slide1 {
+    background-image: url("../images/wsimg-1.png")
+}
+#slide2 {
+    background-image: url("../images/wsimg-1.png");
+}
+#slide3 {
+    background-image: url("../images/wsimg-1.png");
+}
+#slide4 {
+    background-image: url("../images/wsimg-1.png");
+}
+#slide5 {
+    background-image: url("../images/wsimg-1.png");
+}
+#slide6 {
+    background-image: url("../images/wsimg-1.png");
+}
+#slide7 {
+    background-image: url("../images/wsimg-1.png");
+}
+#slide8 {
+    background-image: url("../images/wsimg-1.png");
+}
+.scroll-container .slide:nth-last-child(1) {
+    margin-right: 0;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        /* Adjusted width for mobile */
+    }
+
+    .scroll-container {
+        padding: 5px;
+        /* Adjusted padding for mobile */
+    }
+
+    .scroll-container .slide {
+        min-width: 300px;
+        /* Full width for mobile */
+        height: 200px;
+        /* Adjusted height for mobile */
+        margin-right: 10px;
+        /* Adjusted margin for mobile */
+    }
+
+    .scroll-container .slide:nth-last-child(1) {
+        margin-right: 0;
+    }
+}

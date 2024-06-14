@@ -1,35 +1,85 @@
+/* General resets and imports */
 @import url(main.css);
-
 body,
 h1,
 h2 {
 	margin: 0;
 	padding: 0;
 }
+#zoekbalk {
+	margin-top: 20px;
+}
 
+#search {
+	margin-top: 25px;
+	padding-right: 15px;
+}
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* Main container styles */
+form.formulier input[type="text"]::placeholder {
+    color: #888; /* Adjust the color to suit your design */
+    opacity: 1; /* Ensure full opacity */
+    font-size: 14px; /* Adjust the font size as needed */
+}
 .outerwrapper {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
 	background-color: #141414;
 	color: #fff;
-	background-image: url("../imagess/gray_background.png") no-repeat center
-		center fixed;
+	background-image: url("../imagess/gray_background.png");
+	background-repeat: no-repeat;
+	background-position: center center;
 	background-size: cover;
 }
 
+/* Typography and basic styles */
 p {
 	color: white;
-
 	font-family: "urw-form-expanded", sans-serif;
 	font-weight: 400;
-	font-style: normal;
 }
 
-.innerwrapper {
-	flex: 1;
-	padding: 20px;
+h1,
+h2 {
+	font-family: "urw-form-expanded", sans-serif;
+	font-weight: bolder;
+	text-align: center;
 }
+
+h1 {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+/* Inner wrapper and content styles */
+
 
 .content {
 	max-width: 65%;
@@ -37,28 +87,14 @@ p {
 	margin-top: 100px;
 }
 
-h1 {
-	margin-bottom: 20px;
-	font-size: 24 px;
-
-	font-family: "urw-form-expanded", sans-serif;
-	font-weight: bolder;
-	text-align: center;
-}
-
-h2 {
-	font-size: 32 px;
-	font-family: "urw-form-expanded", sans-serif;
-	font-weight: bolder;
-	text-align: center;
-}
-
 .formulier {
 	margin-top: 100px;
 }
 
+/* Form styling */
 .rij {
 	margin-bottom: 25px;
+	display: flex;
 }
 
 .rij h2 {
@@ -72,6 +108,7 @@ h2 {
 	flex: 1;
 	display: flex;
 }
+
 .rij input[type="text"],
 .rij input[type="email"],
 .rij textarea {
@@ -107,18 +144,17 @@ textarea {
 	font-weight: bold;
 }
 
+/* FAQ section styling */
 .faq {
-	background-color: rgba(190, 190, 190, 0.175);
-	padding: 10px;
-	border-radius: 2px;
-	margin-top: 100px;
+	margin-top: 10px;
 }
 
 .faq .rij p {
-	border-bottom: 1px solid white;
+	border-bottom: 0.75px solid white;
 	flex-direction: row;
 	display: flex;
 }
+
 .faq .answer p {
 	margin: 5px 0;
 	color: #c7b7b7;
@@ -132,6 +168,7 @@ textarea {
 	border-bottom: 1px solid rgba(151, 151, 151, 0.818);
 	transition: max-height 0.3s ease-out;
 }
+
 .info-icon {
 	width: 15px;
 	height: 15px;
@@ -143,6 +180,198 @@ textarea {
 	display: flex;
 }
 
+/* Calendar styling */
+.calendar {
+	margin-top: 8%;
+	width: 100%;
+	max-width: 700px;
+	border-radius: 15px;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.7);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	z-index: 1;
+}
+
+.month {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.1);
+	color: white;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.month h2 {
+	margin: 0;
+	font-size: 2.2em;
+}
+
+.month button {
+	background: none;
+	display: flex;
+	color: white;
+	cursor: pointer;
+}
+
+.weekdays {
+	display: flex;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.weekdays div {
+	flex: 1;
+	padding: 20px 0;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+}
+
+.days {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.day {
+	width: calc(100% / 7);
+	padding: 20px 0;
+	text-align: center;
+	color: white;
+	position: relative;
+	cursor: pointer;
+	font-size: 1.2em;
+}
+
+.day:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	transform: scale(1.05);
+}
+
+.day.empty {
+	background-color: transparent;
+}
+
+.day .info {
+	display: none;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 10;
+}
+
+/* Form container styling */
+.form-container {
+	margin-top: 8%;
+	padding: 4%;
+	border-radius: 15px;
+	color: white;
+	width: 90%;
+	max-width: 300px;
+}
+
+.form-container h2 {
+	margin: 5%;
+	font-size: 45px;
+}
+
+.form-container form {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	padding: 5%;
+}
+
+.form-container input,
+.form-container select {
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.1);
+	color: white;
+	font-size: 1em;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.form-container select {
+	background-repeat: no-repeat;
+	background-position: right 10px center;
+	background-size: 8px 10px;
+	background-color: black;
+	border: solid 1px;
+}
+
+.form-container button {
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: black;
+	color: white;
+	font-size: 1em;
+	cursor: pointer;
+}
+
+.form-container .radio-group {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	color: white;
+}
+
+.form-container .radio-group input[type="radio"] {
+	display: none;
+}
+
+.form-container .radio-group label {
+	position: relative;
+	padding-left: 20px;
+	cursor: pointer;
+	font-size: 1em;
+	color: white;
+}
+
+.form-container .radio-group label:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 15px;
+	height: 15px;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	border-radius: 50%;
+	background-color: black;
+}
+
+.form-container .radio-group input[type="radio"]:checked + label:before {
+	background-color: white;
+}
+
+.form-container .radio-group label:after {
+	content: "";
+	position: absolute;
+	left: 6px;
+	top: 50%;
+	transform: translateY(-50%) scale(0);
+	width: 7px;
+	height: 7px;
+	background-color: black;
+	border-radius: 50%;
+	transition: transform 0.2s;
+}
+
+.form-container .radio-group input[type="radio"]:checked + label:after {
+	transform: translateY(-50%) scale(1);
+}
+
+/* Responsive styles */
 @media (min-width: 768px) {
 	.content {
 		display: grid;
@@ -160,17 +389,14 @@ textarea {
 		grid-column: 2 / span 1;
 		margin-top: 10px;
 	}
+
 	h1 {
 		text-align: start;
 		margin-bottom: 20px;
 	}
 }
-body {
-	margin: 0;
-	font-family: "indivisible", sans-serif;
-}
 
-/*----------------------------RESPONSIVE---------------------------*/
+/* Mobile-specific styles */
 @media only screen and (max-width: 768px) {
 	.desktop {
 		display: none;
@@ -225,7 +451,6 @@ body {
 		opacity: 0;
 		z-index: 2;
 	}
-
 	.Mobile .menuToggle span {
 		display: block;
 		width: 33px;
@@ -309,9 +534,39 @@ body {
 		padding: 10px;
 		border-radius: 30px;
 	}
+
+	.container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.calendar,
+	.form-container {
+		width: 90%;
+	}
+
+	.month h2 {
+		font-size: 1.8em;
+	}
+
+	.month button {
+		font-size: 1.8em;
+	}
+
+	.weekdays div {
+		padding: 15px 0;
+	}
+
+	.day {
+		padding: 15px 0;
+		font-size: 1em;
+	}
+	.rij.zoekbalk-container{
+		margin-top:50px;
+	}
 }
 
-/* FOOTER STYLING */
+/* Footer styling */
 .footer {
 	display: flex;
 	flex-direction: column;
@@ -423,4 +678,11 @@ body {
 .services_title p,
 .contact_us_title p {
 	color: #000;
+}
+#zoekbalk {
+	margin-top: -10px;
+}
+
+#search {
+	margin-top: 0px;
 }
