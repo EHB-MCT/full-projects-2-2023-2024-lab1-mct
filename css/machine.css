@@ -276,7 +276,7 @@ h2 {
 
 .content p {
 	color: white;
-
+	text-align: center;
 	font-family: "urw-form-expanded", sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -357,7 +357,7 @@ h2 {
 }
 
 .video-container {
-	max-width: 60%;
+	max-width: 50%;
 	align-content: center;
 	margin-bottom: 50px;
 }
