@@ -1,0 +1,85 @@
+@import url(nav-footer.css);
+@import url(main.css);
+
+body,
+h1,
+h2 {
+	margin: 0;
+	padding: 0;
+}
+
+.outerwrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: #141414;
+	color: #fff;
+	background-image: url("../imagess/gray_background.png") no-repeat center
+		center fixed;
+	background-size: cover;
+}
+
+.rij p {
+	color: white;
+
+	font-family: "urw-form-expanded", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.innerwrapper {
+	flex: 1;
+	padding: 20px;
+}
+
+.content {
+	max-width: 65%;
+	margin: 0 auto;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+h1 {
+	margin-bottom: 20px;
+	font-size: 24 px;
+
+	font-family: "urw-form-expanded", sans-serif;
+	font-weight: bolder;
+	text-align: center;
+}
+
+h2 {
+	font-size: 32 px;
+	font-family: "urw-form-expanded", sans-serif;
+	font-weight: bolder;
+	text-align: center;
+}
+.rij {
+	margin-bottom: 50px;
+}
+
+.rij h2 {
+	font-size: 24px;
+	text-align: start;
+}
+
+.rij p {
+	font-size: 1em;
+	margin: 5px 0;
+	flex: 1;
+	display: flex;
+}
+
+.content img {
+	max-width: 100%;
+	margin-bottom: 69px;
+}
+
+@media (min-width: 768px) {
+	.rij p {
+		max-width: 70%;
+	}
+	h1 {
+		text-align: start;
+	}
+}
