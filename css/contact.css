@@ -95,18 +95,6 @@ textarea {
 	height: 100px;
 }
 
-.button {
-	background-color: #fff;
-	color: #000;
-	text-align: center;
-	padding: 10px 20px;
-	border-radius: 5px;
-	cursor: pointer;
-	display: inline-block;
-	text-transform: uppercase;
-	font-weight: bold;
-}
-
 .faq {
 	background-color: rgba(190, 190, 190, 0.175);
 	padding: 10px;

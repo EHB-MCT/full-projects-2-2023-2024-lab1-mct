@@ -132,18 +132,6 @@ textarea {
 	height: 100px;
 }
 
-.button {
-	background-color: #fff;
-	color: #000;
-	text-align: center;
-	padding: 10px 20px;
-	border-radius: 5px;
-	cursor: pointer;
-	display: inline-block;
-	text-transform: uppercase;
-	font-weight: bold;
-}
-
 /* FAQ section styling */
 .faq {
 	margin-top: 10px;
