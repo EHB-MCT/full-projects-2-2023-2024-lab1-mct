@@ -263,7 +263,6 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    margin-top: 100px;
 }
 
 .contact_title h2{
@@ -298,6 +297,69 @@
 
 .open_hours_lending_service img{
     width: 100%;
+}
+
+.prices_container {
+    position: relative;
+    width: 100%;
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.price_frame {
+    width: 100%;
+    height: 375px;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    align-items: center;
+}
+
+.prices_inforamtional_texts {
+    width: 85%;
+}
+
+.price1,
+.price2,
+.price3,
+.quantity {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.disclamer_recordlab {
+    margin-top: 20px;
+}
+
+.disclamer{
+    margin-top: 85px;
+}
+
+.title {
+    margin-top: 40px;
+}
+
+.prices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.prices_title h2{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.prices_title p{
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -372,6 +434,7 @@
     .location_contact_container{
         flex-direction: row;
         align-items: flex-start;
+        margin-top: 100px;
     }
 
     .contact_title h2{
@@ -403,5 +466,24 @@
 
     .your_ideas_to_life_text h2{
         text-align: left;
+    }
+
+    .prices_container {
+        flex-direction: row;
+        justify-content: center;
+        max-width: 800px;
+        gap: 20px;
+    }
+
+    .prices_title h2{
+        text-align: left;
+    }
+
+    .prices_title p{
+        text-align: left;
+    }
+
+    .prices{
+        align-items: flex-start;
     }
 }
