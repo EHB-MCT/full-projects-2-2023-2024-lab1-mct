@@ -40,14 +40,32 @@
     font-family: "ethnocentric", sans-serif;
 }
 
+.recordlab_left{
+    margin-left: -55px;
+    color: red;
+    font-family: "ethnocentric", sans-serif;
+}
+
 .medialab {
     margin-left: -45px;
     color: green;
     font-family: "ethnocentric", sans-serif;
 }
 
+.medialab_right{
+    margin-right: -45px;
+    color: green;
+    font-family: "ethnocentric", sans-serif;
+}
+
 .fablab {
     margin-left: -28px;
+    color: rgb(43, 0, 88);
+    font-family: "ethnocentric", sans-serif;
+}
+
+.fablab_right{
+    margin-right: -28px;
     color: rgb(43, 0, 88);
     font-family: "ethnocentric", sans-serif;
 }
