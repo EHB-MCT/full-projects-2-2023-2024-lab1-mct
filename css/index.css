@@ -571,7 +571,6 @@ h2{
     position: relative;
     display: flex;
     justify-content: space-between;
-    gap: 20px;
     margin-top: 20px;
     top: 50vw;
 }
@@ -595,7 +594,6 @@ h2{
 
 .objects{
     display: flex;
-
 }
 
 .objects img {
@@ -791,5 +789,51 @@ h2{
 @media screen and (min-width: 768px) {
     .intro_text{
         top: 38%;
+    }
+
+    .intro{
+        height: calc(100vh - 70px);
+    }
+
+    .side_buttons{
+        top: 270px;
+    }
+    
+    .intro_text{
+        top: 270px;
+    }
+
+    .homepage_buttons{
+        flex-direction: row;
+    }
+
+    .objects img {
+        width: auto;
+        max-width: 600px;
+        max-height: 600px;
+    }
+
+    .center_object img, 
+    .left_object img, 
+    .right_object img {
+        top: auto;
+    }
+
+    .center_object img {
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+    }
+
+    .left_object img {
+        left: 0%;
+        transform: translateX(-50%);
+        position: absolute;
+    }
+
+    .right_object img {
+        left: 100%;
+        transform: translateX(-50%);
+        position: absolute;
     }
 }
