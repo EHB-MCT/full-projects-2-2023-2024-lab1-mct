@@ -1,4 +1,4 @@
-body {
+/* body {
 	margin: 0;
 	font-family: Arial, sans-serif;
 	background-color: #141414;
@@ -167,7 +167,7 @@ h2{
         flex-direction: column;
         align-items: center;
         margin-top: auto;
-        gap: 20px; /* Add more spacing between the buttons */
+        gap: 20px;
     
     }
     
@@ -547,4 +547,4 @@ h2{
 
 .w3-display-right {
     right: 80px;
-}
+} */
