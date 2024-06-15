@@ -46,6 +46,12 @@
     font-family: "ethnocentric", sans-serif;
 }
 
+.fablab {
+    margin-left: -28px;
+    color: rgb(43, 0, 88);
+    font-family: "ethnocentric", sans-serif;
+}
+
 .objects{
     display: flex;
 }
@@ -261,10 +267,6 @@
 }
 
 @media screen and (min-width: 768px) {
-    .intro{
-        height: calc(100vh - 70px);
-    }
-
     .side_buttons{
         top: 270px;
     }
