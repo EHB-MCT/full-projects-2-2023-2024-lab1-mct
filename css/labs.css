@@ -226,6 +226,22 @@
     transform: translate(-50%, -50%);
 }
 
+.prices_container_medialab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.prices_title_medialab h2{
+    margin-top: 100px;
+}
+
+.prices_title_medialab p{
+    margin-top: 20px;
+}
+
 .read_more{
     display: flex;
     justify-content: center;
@@ -339,6 +355,10 @@
     .workshops_container,
     .machinepark_container{
         flex-direction: row;
+    }
+
+    .prices_container_medialab{
+        align-items: flex-start;
     }
 
     .lending_service_container{
