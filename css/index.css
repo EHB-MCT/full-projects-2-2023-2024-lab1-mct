@@ -229,6 +229,21 @@
     margin-bottom: 20px;
 }
 
+.contact_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.location_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
 .open_hours_container{
     display: flex;
     flex-direction: column;
@@ -322,6 +337,11 @@
         align-items: flex-start;
     }
 
+    .location_container{
+        align-items: flex-start;
+        gap: 0;
+    }
+
     .contact_title h2{
         text-align: left;
         margin-top: 0;
@@ -333,6 +353,11 @@
 
     .contact_button{
         margin-top: 20px;
+    }
+
+    .contact_container{
+        align-items: flex-start;
+        gap: 0;
     }
 
     .lab_openings_hours_container{

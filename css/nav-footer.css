@@ -17,13 +17,18 @@ nav.Mobile {
     display: flex;
     justify-content: center; 
     align-items: center; 
-    background-color: #141414; 
     color: white;
     position: fixed;
     width: 100vw;
     top: 0;
     z-index: 1000;
     padding: 10px;
+
+    background: rgba(0, 0, 0, 0.23);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.7px);
+    -webkit-backdrop-filter: blur(4.7px);
+
 }
 
 .menuToggle {
@@ -222,6 +227,7 @@ padding: 3px 0;
     .footer{
         flex-direction: row-reverse;
         align-items: flex-start;
+        justify-content: space-around;
     }
 
     .contact_us_title,
@@ -234,11 +240,18 @@ padding: 3px 0;
     }
 
     .desktop_nav{
+        position: fixed;
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 10px 20px;
-        background-color: #141414;
+        z-index: 10;
+        width: 100%;
+
+        background: rgba(0, 0, 0, 0.23);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.7px);
+        -webkit-backdrop-filter: blur(4.7px);
     }
 
     .logo_desktop a img{
