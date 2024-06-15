@@ -548,3 +548,77 @@ h2{
 .w3-display-right {
     right: 80px;
 } */
+
+.intro {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.intro_text{
+    position: absolute;
+    top: 45vw;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.objects{
+    display: flex;
+
+}
+
+.objects img {
+    width: 70%;
+    top: 10%;
+    max-width: 100%;
+    position: relative;
+}
+
+.center_object img {
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    position: absolute;
+}
+
+.left_object img {
+    left: 50%;
+    transform: translateX(-140%);
+    max-width: 100%;
+    position: absolute;
+}
+
+.right_object img {
+    left: 50%;
+    transform: translateX(30%);
+    max-width: 100%;
+    position: absolute;
+}
+
+.homepage_buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.scroll_for_more{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (min-width: 768px) {
+    .intro_text{
+        top: 38%;
+    }
+}
