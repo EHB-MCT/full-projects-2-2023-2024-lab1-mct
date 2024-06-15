@@ -1,7 +1,11 @@
+/* WRAPPER */
+
 .wrapper{
     width: 70%;
     margin: 0 auto;
 }
+
+/* STYLING FOR FIRST SECTION OF THE PAGE */
 
 .intro {
     height: 100vh;
@@ -98,6 +102,8 @@
 .scroll_for_more p{
     color: #B4B4B4;
 }
+
+/* STYLING FOR ELEMENTS ON PAGE */
 
 .your_ideas_to_life_container{
     display: flex;
