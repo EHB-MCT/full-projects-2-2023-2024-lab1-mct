@@ -30,3 +30,9 @@ h3 {
 	font-style: normal;
 	font-size: 40px;
 }
+
+@media screen and (min-width: 768px) {
+	h1 {
+		font-size: 75px;
+	}
+}

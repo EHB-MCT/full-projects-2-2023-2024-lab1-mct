@@ -645,6 +645,10 @@ h2{
     transform: translateX(-50%);
 }
 
+.scroll_for_more p{
+    color: #B4B4B4;
+}
+
 .your_ideas_to_life_container{
     display: flex;
     flex-direction: column-reverse;
@@ -778,6 +782,10 @@ h2{
     padding-bottom: 100px;
 }
 
+.open_hours_labs{
+    margin-bottom: 20px;
+}
+
 .open_hours_labs img{
     width: 100%;
 }
@@ -787,10 +795,6 @@ h2{
 }
 
 @media screen and (min-width: 768px) {
-    .intro_text{
-        top: 38%;
-    }
-
     .intro{
         height: calc(100vh - 70px);
     }
@@ -800,7 +804,7 @@ h2{
     }
     
     .intro_text{
-        top: 270px;
+        top: 220px;
     }
 
     .homepage_buttons{
@@ -835,5 +839,56 @@ h2{
         left: 100%;
         transform: translateX(-50%);
         position: absolute;
+    }
+    .your_ideas_to_life_container{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .workshops_title h2{
+        text-align: left;
+    }
+
+    .workshops_container{
+        flex-direction: row;
+    }
+
+    .lending_service_container{
+        align-items: flex-start;
+    }
+
+    .lending_service_text p{
+        width: 50%;
+    }
+
+    .location_contact_container{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .contact_title h2{
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .location_title h2{
+        margin-bottom: 20px;
+    }
+
+    .contact_button{
+        margin-top: 20px;
+    }
+
+    .lab_openings_hours_container{
+        display: flex;
+        gap: 20px;
+    }
+
+    .open_hours_container{
+        align-items: flex-start;
+    }
+
+    .your_ideas_to_life_text h2{
+        text-align: left;
     }
 }
