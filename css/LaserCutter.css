@@ -25,9 +25,7 @@ h1 {
     min-height: 100px;
 }
 
-.container1,
-.container2,
-.container3 {
+.container1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -40,16 +38,6 @@ h1 {
 }
 
 .container1 {
-    height: 450px;
-    margin-left: 50%;
-}
-
-.container2 {
-    height: 450px;
-    margin-left: 50%;
-}
-
-.container3 {
     height: 450px;
     margin-left: 50%;
 }
@@ -106,9 +94,7 @@ img {
         min-height: auto;
     }
 
-    .container1,
-    .container2,
-    .container3 {
+    .container1 {
         flex-direction: column;
         height: auto;
         align-items: center;
