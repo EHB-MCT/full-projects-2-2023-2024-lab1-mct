@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="https://use.typekit.net/yrg2nyg.css" />
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/reserveer.css">
+    <link rel="stylesheet" href="css/calender.css">
 
 	<title>Make It Brussels | Reserveer</title>
 </head>
@@ -48,7 +49,6 @@
         </div>
         <a class="reserveer" href="#">RESERVEER</a>
     </nav>
-
 <div class="desktop_nav desktop">
     <div class="logo_desktop">
         <a href="#">
@@ -92,7 +92,7 @@
 			<form>
 				<select name="lab">
 					<option value="lab1">FabLab </option>
-					<option value="lab2">mediaLab </option>
+					<option value="lab2">MediaLab </option>
 					<option value="lab3">RecordLab </option>
 				</select>
 				<input type="text" name="firstName" placeholder="Naam">
@@ -102,9 +102,38 @@
 				<button type="submit">RESERVEER</button>
 			</form>
 		</div>
-		<div class="calendar"></div>
-	</div>
+        <div class="container">
+            <div class="calendar">
+            <div class="header">
+                <div class="month"></div>
+                <div class="btns">
+                <div class="btn prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="btn next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                </div>
+            </div>
+            <div class="weekdays">
+                <div class="day">Zo</div>
+                <div class="day">Ma</div>
+                <div class="day">Di</div>
+                <div class="day">Wo</div>
+                <div class="day">Do</div>
+                <div class="day">Vr</div>
+                <div class="day">Za</div>
+            </div>
+            <div class="days">
+                <!-- Zie JS -->
+            </div>
+            </div>
+        </div>
+        <!-- SCRIPT -->
+        <script src="js/calender.js"></script>
 
+	</div>
+    
     <footer>
         <div class="footer">
             <a href="#">
