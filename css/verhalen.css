@@ -1,7 +1,7 @@
 body {
     background-color: #141414;
     margin: auto;
-    background-image: url(./images/gray_background.png);
+    background-image: url(../images/gray_background.png);
     background-position: right center;
 	background-repeat: no-repeat;
 	background-attachment:scroll;
@@ -33,6 +33,7 @@ p {
     width: 100%;
     height: auto;
     max-width: 838px;
+    opacity: 0.8;
 }
 
 .imago {
@@ -97,7 +98,6 @@ p {
     padding: 1rem 0;
 }
 
-/* Desktop styles */
 .scroll-container {
     display: flex;
     overflow-x: auto;
@@ -109,64 +109,71 @@ p {
 
 .scroll-container .slide {
     min-width: 600px;
-    /* Increased width for desktop */
     height: 300px;
-    /* Adjusted height for desktop */
     background-color: #f1f1f1;
     margin-right: 20px;
-   
-    /* Increased margin for desktop */
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: start; 
+    text-align: start; 
+    padding: 20px;
 }
 #slide1 {
-    background-image: url("../images/wsimg-1.png")
+    background-image: url("../images/wsimg-1.png");
+    background-size: cover;
+    background-position: center;
 }
 #slide2 {
-    background-image: url("../images/20240307_EHB_Campus\ Kaai_ByThierryGeenen0137.jpg");
+    background-image: url("../images/ultimaker2.jpg");
+    background-size: cover;
+    background-position: center;
 }
 #slide3 {
-    background-image: url("../images/307_EHB_Campus\ Kaai_ByThierryGeenen0097.jpg");
+    background-image: url("../images/vlogehb.jpg");
+    background-size: cover;
+    background-position: center;
 }
 #slide4 {
-    background-image: url("../images/wsimg-1.png");
+    background-image: url("../images/vlogt2.jpg");
+    background-size: cover;
+    background-position: center;
 }
 #slide5 {
-    background-image: url("../images/wsimg-1.png");
+    background-image: url("../images/verhldesign.png"); 
+    background-size: cover;
+    background-position: center;
 }
 #slide6 {
-    background-image: url("../images/wsimg-1.png");
+    background-image: url("../images/verhlcrea.jpg");
+    background-size: cover;
+    background-position: center;
 }
-#slide7 {
-    background-image: url("../images/wsimg-1.png");
+
+.scroll-container .slide h1,
+.scroll-container .slide p,
+.scroll-container .slide .button {
+    margin: 10px 0;
 }
-#slide8 {
-    background-image: url("../images/wsimg-1.png");
-}
+
 .scroll-container .slide:nth-last-child(1) {
     margin-right: 0;
 }
 
-/* Mobile styles */
 @media screen and (max-width: 768px) {
     .container {
         width: 90%;
-        /* Adjusted width for mobile */
     }
 
     .scroll-container {
         padding: 5px;
-        /* Adjusted padding for mobile */
     }
 
     .scroll-container .slide {
         min-width: 300px;
-        /* Full width for mobile */
         height: 200px;
-        /* Adjusted height for mobile */
         margin-right: 10px;
-        /* Adjusted margin for mobile */
+        padding: 10px;
     }
 
     .scroll-container .slide:nth-last-child(1) {
