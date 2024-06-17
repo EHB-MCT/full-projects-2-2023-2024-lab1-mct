@@ -114,6 +114,11 @@ textarea {
 	align-items: center;
 }
 
+.filter a{
+	position: absolute;
+	padding-left: 50px;
+}
+
 @media (min-width: 768px) {
 	.content {
 		display: grid;
@@ -155,6 +160,10 @@ textarea {
 
 	  .content h2{
 		text-align: left;
+	  }
+
+	  .products_title h2{
+		margin-top: -24px;
 	  }
       
       .dropdown:hover .dropdown-content {display: block;}

@@ -6,6 +6,8 @@
 		<link href="css/uitleendienst.css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="https://use.typekit.net/yrg2nyg.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+		<link rel="stylesheet" href="css/calender.css">
 
 		<title>Make It Burssels | Uitleendienst</title>
 	</head>
@@ -74,7 +76,9 @@
 		<div class="outerwrapper">
 			<div class="innerwrapper">
 				<div class="content">
-					<h2>Uitleendienst</h2>
+					<div class="form_title">
+						<h2>Uitleendienst</h2>
+					</div>
 					<form class="formulier">
 						<div class="rij">
 							<input type="text" id="naam" name="naam" placeholder="Naam" />
@@ -119,9 +123,41 @@
                             </div>
                         </form>
                     </div>
+  <div class="container">
+    <div class="calendar">
+      <div class="header">
+        <div class="month"></div>
+        <div class="btns">
+          <div class="btn prev-btn">
+            <i class="fas fa-chevron-left"></i>
+          </div>
+          <div class="btn next-btn">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="weekdays">
+        <div class="day">Zo</div>
+        <div class="day">Ma</div>
+        <div class="day">Di</div>
+        <div class="day">Wo</div>
+        <div class="day">Do</div>
+        <div class="day">Vr</div>
+        <div class="day">Za</div>
+      </div>
+      <div class="days">
+        <!-- Zie JS -->
+      </div>
+    </div>
+  </div>
+  <!-- SCRIPT -->
+  <script src="js/calender.js"></script>
+</body>
+</html>
+
+					</div>
 			    </div>
 		    </div>
-        </div>
 		<footer>
 			<div class="footer">
 				<a href="#">
