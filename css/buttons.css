@@ -5,6 +5,8 @@
 	border-radius: 70px;
 	text-decoration: none;
 	color: white;
+	font-family: "ethnocentric", sans-serif;
+	font-weight: lighter;
 }
 
 .button:hover {
