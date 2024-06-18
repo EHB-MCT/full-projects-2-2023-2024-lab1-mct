@@ -143,7 +143,7 @@
     height: 400px;
     background-color: #000;
     position: relative;
-    width: 100%;
+    width: 31%;
     max-width: 375px;
 }
 
@@ -310,6 +310,10 @@
     
     .intro_text{
         top: 180px;
+    }
+
+    .intro_text p{
+        font-size: 24px;
     }
 
     .homepage_buttons{
