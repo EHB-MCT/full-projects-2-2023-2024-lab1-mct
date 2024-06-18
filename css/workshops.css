@@ -39,6 +39,8 @@
     font-family: "urw-form-expanded", sans-serif;
     backdrop-filter: blur(10px);
     text-align: left;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .workshop-image {
