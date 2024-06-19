@@ -11,6 +11,8 @@
     height: 100vh;
     overflow: hidden;
     position: relative;
+    background-color: #141414;
+    z-index: 5;
 }
 
 .intro_text{
@@ -19,6 +21,11 @@
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+}
+
+.background_texture{
+    z-index: -5;
+    position: fixed;
 }
 
 .side_buttons{
