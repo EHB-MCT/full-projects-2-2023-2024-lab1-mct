@@ -60,8 +60,11 @@
     backdrop-filter: none;
     text-align: left;
 }
-.card-content h2,
-p {
+.card-content h2 {
+    color: #fff;
+}
+
+.card-content p {
     color: #fff;
 }
 .scroll-container h2,
@@ -84,6 +87,7 @@ p {
     display: flex;
     overflow-wrap: break-word;
     overflow-x: auto;
+    overflow-y: hidden;
     padding: 10px;
     margin-top: 20px;
     gap: 15px;
