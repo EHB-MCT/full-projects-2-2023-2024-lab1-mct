@@ -141,7 +141,7 @@
 
 .workshop_frame {
     height: 400px;
-    background-color: #000;
+    background-color: #000000af;
     position: relative;
     width: 100%;
     max-width: 375px;
@@ -181,6 +181,7 @@
     width: 100%;
     top: 50%;
     transform: translateY(-50%);
+    opacity: 0.5;
 }
 
 .workshop_front_img img{
