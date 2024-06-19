@@ -1,0 +1,76 @@
+.wrapper {
+    overflow: auto;
+}
+
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.vacuumformer_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.vacuum_image img {
+    max-width: 300px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.text p{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.title_mobile{
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px){
+    .title_mobile{
+        display: none;
+    }
+
+    .vacuumformer_container{
+        display: flex;
+        flex-direction: row;
+        margin-top: 170px;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .title{
+        margin-top: 0px;
+    }
+
+    .vacuum_text{
+        width: 50%;
+    }
+
+    .vacuum_image{
+        width: 50%;
+    }
+
+    .vacuum_text p,
+    .vacuum_text h2{
+        text-align: left;
+    }
+
+    .tutorial_container{
+        width: 50%;
+        margin-top: 100px;
+    }
+}
