@@ -9,6 +9,10 @@
 	font-weight: lighter;
 }
 
+button{
+	border: 0px;
+}
+
 .button:hover {
 	background-color: rgb(33, 33, 33);
 }
