@@ -14,7 +14,7 @@ export default class Workshops {
 
 	get htmlString() {
 		return `<div class="workshop-card" data-lab="${this._lab}">
-					<a href="reserveer.html">
+					<a href="reserveer_workshop.html">
 						<div
 							class="workshop-image"
 							style="background-image: url('https://media-l.pockethost.io/api/files/${this._collection}/${this._id}/${this._image}')"
