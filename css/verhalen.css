@@ -218,6 +218,10 @@ a{
     text-decoration: none;
 }
 
+.text_button{
+    color: white;
+    border-bottom: 2px solid white;
+}
 
 @media (min-width: 768px) {
     .slide p {
