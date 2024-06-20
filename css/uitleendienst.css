@@ -17,9 +17,11 @@ h2 {
 	background-attachment: fixed;
 	background-size: cover;
 }
+.our_products {
+	margin-top: -40px;
+}
 
-
-.content p {
+.content2 p {
 	color: white;
 
 	font-family: "urw-form-expanded", sans-serif;
@@ -32,19 +34,19 @@ h2 {
 	padding: 20px;
 }
 
-.content {
+.content2 {
 	max-width: 65%;
 	margin: 0 auto;
-	margin-top: 100px;
+	margin-top: 150px;
 }
 
 h1 {
 	margin-bottom: 20px;
-	font-size: 24px;
+	font-size: 45px;
+	text-align: left;
 
 	font-family: "urw-form-expanded", sans-serif;
 	font-weight: bolder;
-	text-align: center;
 }
 
 h2 {
@@ -54,24 +56,8 @@ h2 {
 	text-align: center;
 }
 
-.formulier {
-	margin-top: 50px;
-}
-
 .rij {
 	margin-bottom: 25px;
-}
-
-.rij h2 {
-	font-size: 24px;
-	text-align: start;
-}
-
-.rij p {
-	font-size: 1em;
-	margin: 5px 0;
-	flex: 1;
-	display: flex;
 }
 .rij input[type="text"],
 .rij input[type="email"],
@@ -102,74 +88,251 @@ textarea {
 	margin-top: 5px;
 }
 
-.product_form{
+.product_form {
 	display: flex;
 	flex-direction: row;
 	gap: 20px;
 }
 
-.filter{
+.filter {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 }
 
-.filter a{
+.filter a {
 	position: absolute;
 	padding-left: 50px;
 }
+button {
+	background-color: black;
+	display: inline-block;
+	padding: 10px 20px;
+	border-radius: 70px;
+	text-decoration: none;
+	color: white;
+	font-family: "ethnocentric", sans-serif;
+	font-weight: lighter;
+	border: 0px;
+}
 
+button:hover {
+	background-color: rgb(33, 33, 33);
+}
+
+.contentItems {
+	max-width: 400px;
+	max-height: 350px;
+	border: 2px;
+	overflow: scroll;
+}
+main {
+	padding: 10px;
+}
+.radioWrapper {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+
+	margin-bottom: 20px;
+}
+
+.radioWrapper label {
+	margin: 10px 18px;
+	font-size: 10px;
+}
+
+#content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.content {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 10px;
+	gap: 20px;
+}
+.content img {
+	align-items: center;
+	width: 150px;
+	height: auto;
+	display: block;
+	border-radius: 8px;
+}
+.content h3 {
+	margin: 10px 0 5px 0;
+	font-size: 12px;
+}
 @media (min-width: 768px) {
-	.content {
+	.content2 {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		column-gap: 40px;
 		max-width: 70%;
 	}
-
 	.formulier {
 		grid-column: 1 / span 1;
 		margin-top: 10px;
 	}
 
-	h1 {
+	h2 {
 		text-align: start;
 		margin-bottom: 20px;
 	}
 
 	.dropdown {
-        position: relative;
-        display: inline-block;
-      }
-      
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #242323;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-      }
-      
-      .dropdown-content a {
-        color: white !important;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-      }
+		position: relative;
+		display: inline-block;
+	}
 
-	  .content h2{
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #242323;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+		z-index: 1;
+	}
+
+	.dropdown-content a {
+		color: white !important;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+	}
+
+	.content h2 {
 		text-align: left;
-	  }
+	}
 
-	  .products_title h2{
+	.products_title h2 {
 		margin-top: -24px;
-	  }
-      
-      .dropdown:hover .dropdown-content {display: block;}
+	}
+
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
 }
 body {
 	margin: 0;
 	font-family: "indivisible", sans-serif;
+}
+
+.radioWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.radioWrapper label {
+	color: #fff;
+	font-size: 14px;
+	margin: 0;
+}
+
+.radioWrapper input[type="radio"] {
+	margin-right: 5px;
+}
+
+.filter {
+	position: relative;
+
+}
+
+.filter .radioWrapper {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	background-color: #242323;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	display: none; /* Verberg de radiobuttons standaard */
+}
+
+.filter:hover .radioWrapper {
+	display: flex; /* Toon de radiobuttons wanneer het filterveld gehoverd wordt */
+	flex-direction: column;
+}
+
+.products_title h2{
+	margin-top: 10px;
+}
+
+.calendar{
+	margin-top: 20px;
+}
+
+.formulier input{
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.1);
+	color: white;
+	font-size: 1em;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+@media (max-width: 768px) {
+	.container {
+		width: 90%; /* Aanpassing van 100% naar 90% voor betere schaling */
+	}
+
+	.calendar {
+		padding: 20px;
+	}
+
+	.calendar .header .month {
+		font-size: 18px;
+		padding: 8px;
+	}
+
+	.days .day {
+		height: 40px;
+	}
+	.our_products{
+		margin-top: 40px;
+	}
+	.our_products h2{
+		text-align: left;
+		margin-bottom: 10px;
+	}
+	.form_title h2{
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 375px) {
+	.calendar {
+		padding: 15px;
+	}
+
+	.calendar .header .month {
+		font-size: 16px;
+		padding: 5px;
+	}
+
+	.days .day {
+		height: 30px;
+	}
+	.our_products {
+		margin-top: 40px;
+	}
+	.form_title h2{
+		margin-bottom: 20px;
+	}
 }
 

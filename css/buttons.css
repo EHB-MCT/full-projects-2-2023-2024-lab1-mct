@@ -11,6 +11,14 @@
 
 button{
 	border: 0px;
+	background-color: black;
+	display: inline-block;
+	padding: 10px 20px;
+	border-radius: 70px;
+	text-decoration: none;
+	color: white;
+	font-family: "ethnocentric", sans-serif;
+	font-weight: lighter;
 }
 
 .button:hover {
